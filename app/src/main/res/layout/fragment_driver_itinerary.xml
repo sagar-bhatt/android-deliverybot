@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.sagar.deliverybot.DriverItineraryFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/driver_itinerary_map"
+        tools:context=".DriverItineraryActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        map:cameraBearing="112.5"
+        map:cameraTargetLat="32.772399"
+        map:cameraTargetLng="-117.072286"
+        map:cameraZoom="10"
+        map:uiCompass="true"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="true" />
+
+</FrameLayout>

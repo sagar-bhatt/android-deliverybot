@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.sagar.deliverybot.JobLocationFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/add_job_map"
+        tools:context=".AddJobLocationActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        map:cameraBearing="112.5"
+        map:cameraTargetLat="32.772399"
+        map:cameraTargetLng="-117.072286"
+        map:cameraZoom="10"
+        map:uiCompass="true"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentTop="true">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/search_location"
+                android:padding="3dp"
+                android:hint="@string/search_location_title"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="4"
+                android:background="@android:color/white" >
+            </EditText>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

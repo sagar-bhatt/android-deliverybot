@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/nav_home_title"
+            android:icon="@drawable/ic_assignment_black_24px" />
+        <item
+            android:id="@+id/nav_itinerary"
+            android:title="@string/nav_itinerary_title"
+            android:icon="@drawable/ic_directions_car_black_24px"/>
+    </group>
+
+    <item android:title="@string/nav_others_title">
+        <menu>
+            <item
+                android:id="@+id/nav_signout"
+                android:title="@string/nav_signout_title"
+                android:icon="@drawable/ic_power_settings_new_black_24px"/>
+        </menu>
+    </item>
+
+</menu>
